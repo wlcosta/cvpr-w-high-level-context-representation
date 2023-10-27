@@ -1,0 +1,14 @@
+exp:
+  id: emotic_high_level_context_description
+  output_dir: results
+
+dataset:
+  name: CAER
+  root_folder: D:\William\PhD\EmotiRAM\data\CAER-S
+  output_dir: _preprocessed
+  maximum_files_missing: 10
+
+co_occ:
+  inputs: [nlp, raw]   # Default: [nlp]. Use [raw] if you want the raw predictions.s
+  outputs: [emotions, words]
+  window_size: 3
